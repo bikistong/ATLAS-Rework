@@ -1,0 +1,55 @@
+export interface MasterLeadHeader {
+  leadCode: string;
+  atlasSheetNumber: string;
+  title: string;
+  accountCategory: string;
+  normalBalance: 'DR' | 'CR';
+}
+
+export const MASTER_LEAD_HEADERS: MasterLeadHeader[] = [
+  { leadCode: 'L02', atlasSheetNumber: '2', title: 'Kas & Bank', accountCategory: 'Aset Lancar', normalBalance: 'DR' },
+  { leadCode: 'L03', atlasSheetNumber: '3', title: 'Deposito', accountCategory: 'Aset Lancar', normalBalance: 'DR' },
+  { leadCode: 'L05', atlasSheetNumber: '5', title: 'Piutang Dagang', accountCategory: 'Aset Lancar', normalBalance: 'DR' },
+  { leadCode: 'L06', atlasSheetNumber: '6', title: 'Persediaan Barang Dagang', accountCategory: 'Aset Lancar', normalBalance: 'DR' },
+  { leadCode: 'L07', atlasSheetNumber: '7', title: 'Obligasi / Investasi Surat Berharga Lancar', accountCategory: 'Aset Lancar', normalBalance: 'DR' },
+  { leadCode: 'L08', atlasSheetNumber: '8', title: 'Pajak Dibayar Dimuka', accountCategory: 'Aset Lancar', normalBalance: 'DR' },
+  { leadCode: 'L09', atlasSheetNumber: '9', title: 'Biaya Dibayar Dimuka / Uang Muka', accountCategory: 'Aset Lancar', normalBalance: 'DR' },
+  { leadCode: 'L10', atlasSheetNumber: '10', title: 'Uang Muka Pembelian', accountCategory: 'Aset Lancar', normalBalance: 'DR' },
+  { leadCode: 'L11', atlasSheetNumber: '11', title: 'Aset Lancar Lainnya', accountCategory: 'Aset Lancar', normalBalance: 'DR' },
+  { leadCode: 'L12', atlasSheetNumber: '12', title: 'Investasi Jangka Panjang', accountCategory: 'Aset Tidak Lancar', normalBalance: 'DR' },
+  { leadCode: 'L13', atlasSheetNumber: '13', title: 'Aktiva Tetap', accountCategory: 'Aset Tidak Lancar', normalBalance: 'DR' },
+  { leadCode: 'L14', atlasSheetNumber: '14', title: 'Akumulasi Penyusutan Aktiva Tetap', accountCategory: 'Aset Tidak Lancar (Kontra)', normalBalance: 'CR' },
+  { leadCode: 'L15', atlasSheetNumber: '15', title: 'Aktiva Tidak Berwujud', accountCategory: 'Aset Tidak Lancar', normalBalance: 'DR' },
+  { leadCode: 'L16', atlasSheetNumber: '16', title: 'Aktiva Lain-Lain', accountCategory: 'Aset Tidak Lancar', normalBalance: 'DR' },
+  { leadCode: 'L17', atlasSheetNumber: '17', title: 'Hutang Dagang / Usaha', accountCategory: 'Liabilitas Jangka Pendek', normalBalance: 'CR' },
+  { leadCode: 'L18', atlasSheetNumber: '18', title: 'Uang Muka Pelanggan', accountCategory: 'Liabilitas Jangka Pendek', normalBalance: 'CR' },
+  { leadCode: 'L19', atlasSheetNumber: '19', title: 'Hutang Pihak Ketiga', accountCategory: 'Liabilitas Jangka Pendek', normalBalance: 'CR' },
+  { leadCode: 'L20', atlasSheetNumber: '20', title: 'Hutang Bank Jangka Pendek', accountCategory: 'Liabilitas Jangka Pendek', normalBalance: 'CR' },
+  { leadCode: 'L21', atlasSheetNumber: '21', title: 'Hutang Kartu Kredit', accountCategory: 'Liabilitas Jangka Pendek', normalBalance: 'CR' },
+  { leadCode: 'L22', atlasSheetNumber: '22', title: 'Hutang Pajak - PPN', accountCategory: 'Liabilitas Jangka Pendek', normalBalance: 'CR' },
+  { leadCode: 'L23', atlasSheetNumber: '23', title: 'Hutang Pajak - PPh 21', accountCategory: 'Liabilitas Jangka Pendek', normalBalance: 'CR' },
+  { leadCode: 'L24', atlasSheetNumber: '24', title: 'Hutang Pajak - PPh 23', accountCategory: 'Liabilitas Jangka Pendek', normalBalance: 'CR' },
+  { leadCode: 'L25', atlasSheetNumber: '25', title: 'Hutang Pajak - PPh 25/29', accountCategory: 'Liabilitas Jangka Pendek', normalBalance: 'CR' },
+  { leadCode: 'L26', atlasSheetNumber: '26', title: 'Biaya Yang Masih Harus Dibayar / Utang Pajak & Akrual', accountCategory: 'Liabilitas Jangka Pendek', normalBalance: 'CR' },
+  { leadCode: 'L27', atlasSheetNumber: '27', title: 'Hutang Lain-Lain Lancar', accountCategory: 'Liabilitas Jangka Pendek', normalBalance: 'CR' },
+  { leadCode: 'L28', atlasSheetNumber: '28', title: 'Hutang Jangka Panjang - Bank', accountCategory: 'Liabilitas Jangka Panjang', normalBalance: 'CR' },
+  { leadCode: 'L29', atlasSheetNumber: '29', title: 'Hutang Sewa Pembiayaan (Leasing)', accountCategory: 'Liabilitas Jangka Panjang', normalBalance: 'CR' },
+  { leadCode: 'L30', atlasSheetNumber: '30', title: 'Hutang Obligasi', accountCategory: 'Liabilitas Jangka Panjang', normalBalance: 'CR' },
+  { leadCode: 'L31', atlasSheetNumber: '31', title: 'Liabilitas Imbalan Pasca Kerja', accountCategory: 'Liabilitas Jangka Panjang', normalBalance: 'CR' },
+  { leadCode: 'L32', atlasSheetNumber: '32', title: 'Modal Saham', accountCategory: 'Ekuitas', normalBalance: 'CR' },
+  { leadCode: 'L33', atlasSheetNumber: '33', title: 'Tambahan Modal Disetor (Agio Saham)', accountCategory: 'Ekuitas', normalBalance: 'CR' },
+  { leadCode: 'L34', atlasSheetNumber: '34', title: 'Laba Ditahan / Saldo Laba', accountCategory: 'Ekuitas', normalBalance: 'CR' },
+  { leadCode: 'L35', atlasSheetNumber: '35', title: 'Laba Tahun Berjalan', accountCategory: 'Ekuitas', normalBalance: 'CR' },
+  { leadCode: 'L36', atlasSheetNumber: '36', title: 'Cadangan & Ekuitas Lainnya', accountCategory: 'Ekuitas', normalBalance: 'CR' },
+  { leadCode: 'L37', atlasSheetNumber: '37', title: 'Pendapatan Usaha / Penjualan', accountCategory: 'Pendapatan', normalBalance: 'CR' },
+  { leadCode: 'L38', atlasSheetNumber: '38', title: 'Retur & Potongan Penjualan', accountCategory: 'Pendapatan (Kontra)', normalBalance: 'DR' },
+  { leadCode: 'L39', atlasSheetNumber: '39', title: 'Beban Pokok Penjualan (HPP)', accountCategory: 'Beban Pokok', normalBalance: 'DR' },
+  { leadCode: 'L40', atlasSheetNumber: '40', title: 'Beban Penjualan & Pemasaran', accountCategory: 'Beban Operasional', normalBalance: 'DR' },
+  { leadCode: 'L41', atlasSheetNumber: '41', title: 'Beban Umum & Administrasi - Gaji & Operasional', accountCategory: 'Beban Operasional', normalBalance: 'DR' },
+  { leadCode: 'L42', atlasSheetNumber: '42', title: 'Beban Umum & Administrasi - Sewa', accountCategory: 'Beban Operasional', normalBalance: 'DR' },
+  { leadCode: 'L43', atlasSheetNumber: '43', title: 'Beban Umum & Administrasi - Penyusutan', accountCategory: 'Beban Operasional', normalBalance: 'DR' },
+  { leadCode: 'L44', atlasSheetNumber: '44', title: 'Beban Umum & Administrasi - Kantor & Lainnya', accountCategory: 'Beban Operasional', normalBalance: 'DR' },
+  { leadCode: 'L45', atlasSheetNumber: '45', title: 'Pendapatan Lain-Lain / Bunga / Selisih Kurs', accountCategory: 'Pendapatan Non-Operasional', normalBalance: 'CR' },
+  { leadCode: 'L46', atlasSheetNumber: '46', title: 'Beban Bunga & Administrasi Bank', accountCategory: 'Beban Non-Operasional', normalBalance: 'DR' },
+  { leadCode: 'L47', atlasSheetNumber: '47', title: 'Beban Lain-Lain & Pajak Penghasilan Badan', accountCategory: 'Beban Non-Operasional / Pajak', normalBalance: 'DR' },
+];

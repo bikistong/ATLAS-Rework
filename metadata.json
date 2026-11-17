@@ -1,0 +1,8 @@
+{
+  "name": "ATLAS-Web — CaseWare Audit Working Papers (IAPI v2.1)",
+  "description": "Platform Kertas Kerja Audit Interaktif (IAPI ATLAS v2.1) bergaya CaseWare Working Papers berbasis browser dengan kontrol RBAC, SA 230 Lock Guard, dan penyimpanan local-first.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
