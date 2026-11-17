@@ -153,7 +153,7 @@ export const A110Dashboard: React.FC = () => {
           <div>
             <label
               htmlFor="a110-tipe-perikatan"
-              className="block text-[11px] font-semibold text-slate-700 mb-1"
+              className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1"
             >
               Tipe Perikatan Audit
             </label>
@@ -169,7 +169,7 @@ export const A110Dashboard: React.FC = () => {
                   sourceIndeks: 'A110',
                 })
               }
-              className="w-full h-8 px-2.5 text-xs bg-white border border-slate-300 rounded text-slate-900 disabled:bg-slate-100 disabled:text-slate-500"
+              className="w-full h-8 w-full px-2 rounded border border-slate-300 bg-white text-[13px] text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500/40 focus:border-indigo-500 disabled:bg-slate-100 disabled:text-slate-400 disabled:cursor-not-allowed"
             >
               <option value="Perikatan Tahun Pertama">Perikatan Tahun Pertama</option>
               <option value="Perikatan Berulang">Perikatan Berulang</option>
@@ -188,7 +188,7 @@ export const A110Dashboard: React.FC = () => {
           <div>
             <label
               htmlFor="a110-kriteria-isu"
-              className="block text-[11px] font-semibold text-slate-700 mb-1"
+              className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1"
             >
               Kondisi Pelaporan Keuangan Periode Lalu (A110.I25)
             </label>
@@ -203,7 +203,7 @@ export const A110Dashboard: React.FC = () => {
                   patch: { kriteriaIsuTerdahulu: e.target.value as PriorReportingCondition },
                 })
               }
-              className="w-full h-8 px-2.5 text-xs bg-white border border-slate-300 rounded text-slate-900 disabled:bg-slate-100 disabled:text-slate-500"
+              className="w-full h-8 w-full px-2 rounded border border-slate-300 bg-white text-[13px] text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500/40 focus:border-indigo-500 disabled:bg-slate-100 disabled:text-slate-400 disabled:cursor-not-allowed"
             >
               {PRIOR_REPORTING_CONDITIONS.map((cond) => (
                 <option key={cond} value={cond}>
@@ -303,7 +303,7 @@ export const A110Dashboard: React.FC = () => {
           <div>
             <label
               htmlFor="a110-keputusan"
-              className="block text-[11px] font-semibold text-slate-700 mb-1"
+              className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1"
             >
               Keputusan Penerimaan Perikatan
             </label>
@@ -318,7 +318,7 @@ export const A110Dashboard: React.FC = () => {
                   patch: { keputusanPenerimaan: e.target.value as YesNoUpper },
                 })
               }
-              className="w-full h-8 px-2.5 text-xs font-semibold bg-white border border-slate-300 rounded text-slate-900 disabled:bg-slate-100 disabled:text-slate-500"
+              className="w-full h-8 w-full px-2 rounded border border-slate-300 bg-white text-[13px] font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500/40 focus:border-indigo-500 disabled:bg-slate-100 disabled:text-slate-400 disabled:cursor-not-allowed"
             >
               <option value="YA">YA — Terima / Lanjutkan Perikatan</option>
               <option value="TIDAK">TIDAK — Tolak / Hentikan Perikatan</option>
@@ -338,7 +338,7 @@ export const A110Dashboard: React.FC = () => {
             <div className="flex items-center justify-between mb-1">
               <label
                 htmlFor="a110-mitigasi"
-                className="block text-[11px] font-semibold text-slate-700"
+                className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1"
               >
                 Pertimbangan Auditor & Rencana Mitigasi Risiko (Safeguards)
               </label>
@@ -366,7 +366,7 @@ export const A110Dashboard: React.FC = () => {
                 })
               }
               placeholder="Jelaskan langkah mitigasi risiko (penunjukan EQCR, perluasan sampel substantif, penugasan manajer senior, komunikasi TCWG, dll)..."
-              className="w-full p-2.5 text-xs bg-white border border-slate-300 rounded text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-indigo-600 focus:ring-1 focus:ring-indigo-600 disabled:bg-slate-100 disabled:text-slate-500"
+              className="w-full p-2 rounded border border-slate-300 bg-white text-[13px] text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500/40 focus:border-indigo-500 disabled:bg-slate-100 disabled:text-slate-400 disabled:cursor-not-allowed"
             />
           </div>
         </div>

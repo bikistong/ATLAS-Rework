@@ -235,7 +235,7 @@ export const C300EqcrGate: React.FC = () => {
               type="submit"
               disabled={readOnly || !significantMatter.trim()}
               data-testid="c300-add-finding-btn"
-              className="w-full h-8 bg-indigo-600 hover:bg-indigo-700 disabled:opacity-40 text-white text-xs font-semibold rounded flex items-center justify-center gap-1 cursor-pointer"
+              className="w-full h-8 bg-indigo-700 hover:bg-indigo-800 disabled:opacity-40 text-white text-xs font-semibold rounded flex items-center justify-center gap-1 cursor-pointer"
             >
               <Plus className="w-3.5 h-3.5" />
               <span>Catat</span>

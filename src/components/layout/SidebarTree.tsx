@@ -639,7 +639,7 @@ export const SidebarTree: React.FC = () => {
           role="menu"
           data-testid="sidebar-context-menu"
           style={{ top: contextMenu.y, left: contextMenu.x }}
-          className="fixed z-50 w-52 bg-white border border-slate-200 rounded-md shadow-lg py-1 text-xs text-slate-800"
+          className="fixed z-50 w-52 bg-white border border-slate-200 rounded-sm shadow-lg py-1 text-xs text-slate-800"
         >
           {contextMenu.node.nodeType === 'workpaper' && contextMenu.node.kodeIndeks && (
             <>

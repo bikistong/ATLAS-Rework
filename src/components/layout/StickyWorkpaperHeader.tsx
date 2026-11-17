@@ -100,7 +100,7 @@ export const StickyWorkpaperHeader: React.FC = () => {
                     operation: 'markPrepared',
                   })
                 }
-                className="h-8 px-3 rounded bg-blue-700 hover:bg-blue-800 text-white text-xs font-medium flex items-center gap-1.5 cursor-pointer whitespace-nowrap"
+                className="h-8 px-3 rounded-sm bg-indigo-700 hover:bg-indigo-800 text-white text-xs font-semibold flex items-center gap-1.5 cursor-pointer whitespace-nowrap"
               >
                 <CheckCircle2 className="w-3.5 h-3.5" />
                 Mark Prepared
@@ -135,7 +135,7 @@ export const StickyWorkpaperHeader: React.FC = () => {
                     operation: 'markReviewed',
                   })
                 }
-                className="h-8 px-3 rounded bg-sky-700 hover:bg-sky-800 text-white text-xs font-medium flex items-center gap-1.5 cursor-pointer whitespace-nowrap"
+                className="h-8 px-3 rounded-sm bg-indigo-700 hover:bg-indigo-800 text-white text-xs font-semibold flex items-center gap-1.5 cursor-pointer whitespace-nowrap"
               >
                 <ShieldCheck className="w-3.5 h-3.5" />
                 Review Sign-Off

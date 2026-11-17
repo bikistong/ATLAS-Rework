@@ -336,7 +336,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
               setHubTab('perikatan');
               setShowNewEngForm((prev) => !prev);
             }}
-            className="h-9 px-4 rounded bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold flex items-center gap-1.5 cursor-pointer whitespace-nowrap transition-colors"
+            className="h-9 px-4 rounded bg-indigo-700 hover:bg-indigo-800 text-white text-xs font-semibold flex items-center gap-1.5 cursor-pointer whitespace-nowrap transition-colors"
           >
             <Plus className="w-3.5 h-3.5" />
             <span>Buat Perikatan Baru</span>
@@ -457,7 +457,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                 <form
                   onSubmit={handleCreateEngagement}
                   data-testid="new-engagement-form"
-                  className="bg-white border border-slate-200 rounded-lg p-5 space-y-4 shadow-xs"
+                  className="bg-white border border-slate-200 rounded-sm p-5 space-y-4 shadow-xs"
                 >
                   <div className="flex items-center justify-between border-b border-slate-100 pb-3">
                     <div>
@@ -478,7 +478,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                       <select
                         value={engClientId}
                         onChange={(e) => setEngClientId(e.target.value)}
-                        className="w-full h-9 px-2.5 text-xs bg-white border border-slate-300 rounded-md"
+                        className="w-full h-9 px-2.5 text-xs bg-white border border-slate-300 rounded-sm"
                       >
                         {state.clients.map((c) => (
                           <option key={c.id} value={c.id}>
@@ -495,7 +495,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                         data-testid="new-eng-type"
                         value={tipePerikatan}
                         onChange={(e) => setTipePerikatan(e.target.value as EngagementType)}
-                        className="w-full h-9 px-2.5 text-xs bg-white border border-slate-300 rounded-md"
+                        className="w-full h-9 px-2.5 text-xs bg-white border border-slate-300 rounded-sm"
                       >
                         <option value="Perikatan Tahun Pertama">Perikatan Tahun Pertama</option>
                         <option value="Perikatan Berulang">Perikatan Berulang</option>
@@ -510,7 +510,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                         data-testid="new-eng-year"
                         value={tahunBuku}
                         onChange={(e) => setTahunBuku(Number(e.target.value))}
-                        className="w-full h-9 px-2.5 text-xs font-mono bg-white border border-slate-300 rounded-md"
+                        className="w-full h-9 px-2.5 text-xs font-mono bg-white border border-slate-300 rounded-sm"
                       />
                     </div>
                     <div>
@@ -521,7 +521,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                         type="date"
                         value={periodeMulai}
                         onChange={(e) => setPeriodeMulai(e.target.value)}
-                        className="w-full h-9 px-2.5 text-xs font-mono bg-white border border-slate-300 rounded-md"
+                        className="w-full h-9 px-2.5 text-xs font-mono bg-white border border-slate-300 rounded-sm"
                       />
                     </div>
                     <div>
@@ -532,7 +532,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                         type="date"
                         value={periodeSelesai}
                         onChange={(e) => setPeriodeSelesai(e.target.value)}
-                        className="w-full h-9 px-2.5 text-xs font-mono bg-white border border-slate-300 rounded-md"
+                        className="w-full h-9 px-2.5 text-xs font-mono bg-white border border-slate-300 rounded-sm"
                       />
                     </div>
                     <div>
@@ -543,7 +543,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                         type="date"
                         value={tanggalLaporanAuditor}
                         onChange={(e) => setTanggalLaporanAuditor(e.target.value)}
-                        className="w-full h-9 px-2.5 text-xs font-mono bg-white border border-slate-300 rounded-md"
+                        className="w-full h-9 px-2.5 text-xs font-mono bg-white border border-slate-300 rounded-sm"
                       />
                     </div>
                     <div>
@@ -554,7 +554,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                         type="text"
                         value={nomorSuratPerikatan}
                         onChange={(e) => setNomorSuratPerikatan(e.target.value)}
-                        className="w-full h-9 px-2.5 text-xs bg-white border border-slate-300 rounded-md"
+                        className="w-full h-9 px-2.5 text-xs bg-white border border-slate-300 rounded-sm"
                       />
                     </div>
                     <div>
@@ -565,7 +565,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                         type="text"
                         value={nomorSuratTugas}
                         onChange={(e) => setNomorSuratTugas(e.target.value)}
-                        className="w-full h-9 px-2.5 text-xs bg-white border border-slate-300 rounded-md"
+                        className="w-full h-9 px-2.5 text-xs bg-white border border-slate-300 rounded-sm"
                       />
                     </div>
                     <div>
@@ -576,7 +576,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                         type="date"
                         value={tanggalPerikatan}
                         onChange={(e) => setTanggalPerikatan(e.target.value)}
-                        className="w-full h-9 px-2.5 text-xs font-mono bg-white border border-slate-300 rounded-md"
+                        className="w-full h-9 px-2.5 text-xs font-mono bg-white border border-slate-300 rounded-sm"
                       />
                     </div>
                   </div>
@@ -596,7 +596,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                       <button
                         type="button"
                         onClick={() => setShowNewEngForm(false)}
-                        className="h-8 px-3 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-xs font-medium text-slate-700 cursor-pointer"
+                        className="h-8 px-3 rounded-sm border border-slate-300 bg-white hover:bg-slate-50 text-xs font-medium text-slate-700 cursor-pointer"
                       >
                         Batal
                       </button>
@@ -613,7 +613,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
               )}
 
               {/* Search & SAK Filter Card */}
-              <div className="bg-white border border-slate-200 rounded-lg p-3 flex flex-wrap items-center justify-between gap-3">
+              <div className="bg-white border border-slate-200 rounded-sm p-3 flex flex-wrap items-center justify-between gap-3">
                 <div className="relative flex-1 min-w-[240px] max-w-md">
                   <Search className="w-4 h-4 text-slate-400 absolute left-3 top-2.5 pointer-events-none" />
                   <input
@@ -622,7 +622,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     placeholder="Cari nama entitas klien, kode perikatan, atau tahun buku..."
-                    className="w-full h-9 pl-9 pr-3 text-xs bg-slate-50 border border-slate-200 rounded-md text-slate-800 placeholder:text-slate-400 focus:outline-none focus:bg-white focus:border-indigo-500"
+                    className="w-full h-9 pl-9 pr-3 text-xs bg-slate-50 border border-slate-200 rounded-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:bg-white focus:border-indigo-500"
                   />
                 </div>
 
@@ -634,7 +634,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                         key={f.id}
                         type="button"
                         onClick={() => setSakFilter(f.id)}
-                        className={`px-3 py-1.5 rounded-md text-xs font-medium transition-colors cursor-pointer ${
+                        className={`px-3 py-1.5 rounded-sm text-xs font-medium transition-colors cursor-pointer ${
                           isSelected
                             ? 'bg-indigo-50 border border-indigo-300 text-indigo-800 font-semibold'
                             : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100 border border-transparent'
@@ -648,7 +648,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
               </div>
 
               {/* Engagements Table Card */}
-              <div className="bg-white border border-slate-200 rounded-lg overflow-hidden">
+              <div className="bg-white border border-slate-200 rounded-sm overflow-hidden">
                 <div className="overflow-x-auto">
                   <table className="w-full text-left border-collapse">
                     <thead className="bg-slate-50 border-b border-slate-200 text-xs font-semibold text-slate-600">
@@ -794,7 +794,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                                           ? `Buka arsip ${client?.namaKlien ?? eng.id}`
                                           : `Arsipkan ${client?.namaKlien ?? eng.id}`
                                       }
-                                      className={`h-9 w-9 rounded-md border inline-flex items-center justify-center cursor-pointer ${
+                                      className={`h-9 w-9 rounded-sm border inline-flex items-center justify-center cursor-pointer ${
                                         eng.isArchived
                                           ? 'border-amber-300 bg-amber-50 hover:bg-amber-100 text-amber-700'
                                           : 'border-slate-200 bg-white hover:bg-slate-50 text-slate-500 hover:text-slate-800'
@@ -821,7 +821,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
           )}
 
           {activeTab === 'klien' && (
-            <section className="bg-white border border-slate-200 rounded-lg overflow-hidden">
+            <section className="bg-white border border-slate-200 rounded-sm overflow-hidden">
               <div className="px-5 py-4 border-b border-slate-200 flex flex-wrap items-center justify-between gap-3">
                 <div>
                   <h1 className="text-lg font-bold text-slate-900">Master Entitas Klien</h1>
@@ -856,7 +856,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                         value={namaKlien}
                         onChange={(e) => setNamaKlien(e.target.value)}
                         placeholder="PT Nusantara Sejahtera Tbk"
-                        className="w-full h-8 px-2.5 text-xs bg-white border border-slate-300 rounded-md"
+                        className="w-full h-8 px-2.5 text-xs bg-white border border-slate-300 rounded-sm"
                       />
                     </div>
                     <div>
@@ -868,7 +868,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                         value={npwp}
                         onChange={(e) => setNpwp(e.target.value)}
                         placeholder="01.234.567.8-000.000"
-                        className="w-full h-8 px-2.5 text-xs font-mono bg-white border border-slate-300 rounded-md"
+                        className="w-full h-8 px-2.5 text-xs font-mono bg-white border border-slate-300 rounded-sm"
                       />
                     </div>
                     <div>
@@ -879,7 +879,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                         type="text"
                         value={nib}
                         onChange={(e) => setNib(e.target.value)}
-                        className="w-full h-8 px-2.5 text-xs font-mono bg-white border border-slate-300 rounded-md"
+                        className="w-full h-8 px-2.5 text-xs font-mono bg-white border border-slate-300 rounded-sm"
                       />
                     </div>
                     <div>
@@ -889,7 +889,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                       <select
                         value={sektorIndustri}
                         onChange={(e) => setSektorIndustri(e.target.value as ClientSector)}
-                        className="w-full h-8 px-2.5 text-xs bg-white border border-slate-300 rounded-md"
+                        className="w-full h-8 px-2.5 text-xs bg-white border border-slate-300 rounded-sm"
                       >
                         {CLIENT_SECTORS.map((sec) => (
                           <option key={sec} value={sec}>
@@ -907,7 +907,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                         onChange={(e) =>
                           setStatusKepemilikan(e.target.value as ClientOwnershipStatus)
                         }
-                        className="w-full h-8 px-2.5 text-xs bg-white border border-slate-300 rounded-md"
+                        className="w-full h-8 px-2.5 text-xs bg-white border border-slate-300 rounded-sm"
                       >
                         {CLIENT_OWNERSHIP_STATUSES.map((st) => (
                           <option key={st} value={st}>
@@ -923,7 +923,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                       <select
                         value={sakDigunakan}
                         onChange={(e) => setSakDigunakan(e.target.value as AccountingFramework)}
-                        className="w-full h-8 px-2.5 text-xs bg-white border border-slate-300 rounded-md"
+                        className="w-full h-8 px-2.5 text-xs bg-white border border-slate-300 rounded-sm"
                       >
                         {ACCOUNTING_FRAMEWORKS.map((sak) => (
                           <option key={sak} value={sak}>
@@ -940,7 +940,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                         type="text"
                         value={alamat}
                         onChange={(e) => setAlamat(e.target.value)}
-                        className="w-full h-8 px-2.5 text-xs bg-white border border-slate-300 rounded-md"
+                        className="w-full h-8 px-2.5 text-xs bg-white border border-slate-300 rounded-sm"
                       />
                     </div>
                     <div>
@@ -951,7 +951,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                         type="text"
                         value={kota}
                         onChange={(e) => setKota(e.target.value)}
-                        className="w-full h-8 px-2.5 text-xs bg-white border border-slate-300 rounded-md"
+                        className="w-full h-8 px-2.5 text-xs bg-white border border-slate-300 rounded-sm"
                       />
                     </div>
                     <div>
@@ -961,7 +961,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                       <select
                         value={provinsi}
                         onChange={(e) => setProvinsi(e.target.value)}
-                        className="w-full h-8 px-2.5 text-xs bg-white border border-slate-300 rounded-md"
+                        className="w-full h-8 px-2.5 text-xs bg-white border border-slate-300 rounded-sm"
                       >
                         {INDONESIA_PROVINCES.map((prov) => (
                           <option key={prov} value={prov}>
@@ -975,7 +975,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                     <button
                       type="button"
                       onClick={() => setShowNewClientForm(false)}
-                      className="h-8 px-3 rounded-md border border-slate-300 bg-white text-xs text-slate-700 cursor-pointer"
+                      className="h-8 px-3 rounded-sm border border-slate-300 bg-white text-xs text-slate-700 cursor-pointer"
                     >
                       Batal
                     </button>
@@ -1025,7 +1025,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
           {activeTab === 'personil' && (
             <div className="space-y-4">
               {!canManage && (
-                <div className="bg-amber-50 border border-amber-200 text-amber-900 rounded-lg px-4 py-2.5 text-xs flex items-center gap-2">
+                <div className="bg-amber-50 border border-amber-200 text-amber-900 rounded-sm px-4 py-2.5 text-xs flex items-center gap-2">
                   <ShieldAlert className="w-4 h-4 text-amber-600 shrink-0" />
                   <span>
                     Anda masuk sebagai <strong>{activeUser.role}</strong>. Pengubahan Personel Tim hanya tersedia untuk peran <strong>Partner</strong> atau <strong>Manager</strong>.
@@ -1033,7 +1033,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                 </div>
               )}
 
-              <section className="bg-white border border-slate-200 rounded-lg overflow-hidden">
+              <section className="bg-white border border-slate-200 rounded-sm overflow-hidden">
                 <div className="px-5 py-4 border-b border-slate-200">
                   <h1 className="text-lg font-bold text-slate-900">
                     Personil KAP & Peran RBAC
@@ -1102,7 +1102,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                         value={newUserName}
                         onChange={(e) => setNewUserName(e.target.value)}
                         placeholder="Rina Kartika, S.Ak."
-                        className="w-full h-8 px-2.5 text-xs bg-white border border-slate-300 rounded-md"
+                        className="w-full h-8 px-2.5 text-xs bg-white border border-slate-300 rounded-sm"
                       />
                     </div>
                     <div>
@@ -1115,7 +1115,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                         value={newUserInisial}
                         onChange={(e) => setNewUserInisial(e.target.value)}
                         placeholder="RK"
-                        className="w-full h-8 px-2.5 text-xs font-mono uppercase bg-white border border-slate-300 rounded-md"
+                        className="w-full h-8 px-2.5 text-xs font-mono uppercase bg-white border border-slate-300 rounded-sm"
                       />
                     </div>
                     <div>
@@ -1127,7 +1127,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                         value={newUserReg}
                         onChange={(e) => setNewUserReg(e.target.value)}
                         placeholder="IAPI-24011"
-                        className="w-full h-8 px-2.5 text-xs font-mono bg-white border border-slate-300 rounded-md"
+                        className="w-full h-8 px-2.5 text-xs font-mono bg-white border border-slate-300 rounded-sm"
                       />
                     </div>
                     <div>
@@ -1137,7 +1137,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                       <select
                         value={newUserRole}
                         onChange={(e) => setNewUserRole(e.target.value as UserRole)}
-                        className="w-full h-8 px-2 text-xs bg-white border border-slate-300 rounded-md"
+                        className="w-full h-8 px-2 text-xs bg-white border border-slate-300 rounded-sm"
                       >
                         <option value="Anggota Tim">Anggota Tim</option>
                         <option value="Ketua Tim">Ketua Tim</option>
@@ -1161,7 +1161,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
           {activeTab === 'profil' && (
             <div className="space-y-4">
               {!canManage && (
-                <div className="bg-amber-50 border border-amber-200 text-amber-900 rounded-lg px-4 py-2.5 text-xs flex items-center gap-2">
+                <div className="bg-amber-50 border border-amber-200 text-amber-900 rounded-sm px-4 py-2.5 text-xs flex items-center gap-2">
                   <ShieldAlert className="w-4 h-4 text-amber-600 shrink-0" />
                   <span>
                     Anda masuk sebagai <strong>{activeUser.role}</strong>. Pengubahan Profil KAP hanya tersedia untuk peran <strong>Partner</strong> atau <strong>Manager</strong>.
@@ -1171,7 +1171,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
 
               <form
                 onSubmit={handleSaveKap}
-                className="bg-white border border-slate-200 rounded-lg overflow-hidden"
+                className="bg-white border border-slate-200 rounded-sm overflow-hidden"
               >
                 <div className="px-5 py-4 border-b border-slate-200 flex flex-wrap items-center justify-between gap-3">
                   <div>
@@ -1206,7 +1206,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                       disabled={!canManage}
                       value={formKap.namaKap}
                       onChange={(e) => setFormKap((p) => ({ ...p, namaKap: e.target.value }))}
-                      className="w-full h-9 px-3 text-xs border border-slate-300 rounded-md focus:outline-none focus:border-slate-500 disabled:bg-slate-100 disabled:text-slate-500"
+                      className="w-full h-9 px-3 text-xs border border-slate-300 rounded-sm focus:outline-none focus:border-slate-500 disabled:bg-slate-100 disabled:text-slate-500"
                     />
                   </div>
                   <div>
@@ -1220,7 +1220,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                       disabled={!canManage}
                       value={formKap.namaPemimpin}
                       onChange={(e) => setFormKap((p) => ({ ...p, namaPemimpin: e.target.value }))}
-                      className="w-full h-9 px-3 text-xs border border-slate-300 rounded-md focus:outline-none focus:border-slate-500 disabled:bg-slate-100 disabled:text-slate-500"
+                      className="w-full h-9 px-3 text-xs border border-slate-300 rounded-sm focus:outline-none focus:border-slate-500 disabled:bg-slate-100 disabled:text-slate-500"
                     />
                   </div>
                   <div>
@@ -1233,7 +1233,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                       disabled={!canManage}
                       value={formKap.nomorIzinKap}
                       onChange={(e) => setFormKap((p) => ({ ...p, nomorIzinKap: e.target.value }))}
-                      className="w-full h-9 px-3 text-xs font-mono border border-slate-300 rounded-md focus:outline-none focus:border-slate-500 disabled:bg-slate-100 disabled:text-slate-500"
+                      className="w-full h-9 px-3 text-xs font-mono border border-slate-300 rounded-sm focus:outline-none focus:border-slate-500 disabled:bg-slate-100 disabled:text-slate-500"
                     />
                   </div>
                   <div>
@@ -1246,7 +1246,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                       disabled={!canManage}
                       value={formKap.nomorIzinAp}
                       onChange={(e) => setFormKap((p) => ({ ...p, nomorIzinAp: e.target.value }))}
-                      className="w-full h-9 px-3 text-xs font-mono border border-slate-300 rounded-md focus:outline-none focus:border-slate-500 disabled:bg-slate-100 disabled:text-slate-500"
+                      className="w-full h-9 px-3 text-xs font-mono border border-slate-300 rounded-sm focus:outline-none focus:border-slate-500 disabled:bg-slate-100 disabled:text-slate-500"
                     />
                   </div>
                   <div className="md:col-span-2">
@@ -1259,7 +1259,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                       disabled={!canManage}
                       value={formKap.alamat}
                       onChange={(e) => setFormKap((p) => ({ ...p, alamat: e.target.value }))}
-                      className="w-full h-9 px-3 text-xs border border-slate-300 rounded-md focus:outline-none focus:border-slate-500 disabled:bg-slate-100 disabled:text-slate-500"
+                      className="w-full h-9 px-3 text-xs border border-slate-300 rounded-sm focus:outline-none focus:border-slate-500 disabled:bg-slate-100 disabled:text-slate-500"
                     />
                   </div>
                   <div>
@@ -1272,7 +1272,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                       disabled={!canManage}
                       value={formKap.kota}
                       onChange={(e) => setFormKap((p) => ({ ...p, kota: e.target.value }))}
-                      className="w-full h-9 px-3 text-xs border border-slate-300 rounded-md focus:outline-none focus:border-slate-500 disabled:bg-slate-100 disabled:text-slate-500"
+                      className="w-full h-9 px-3 text-xs border border-slate-300 rounded-sm focus:outline-none focus:border-slate-500 disabled:bg-slate-100 disabled:text-slate-500"
                     />
                   </div>
                   <div>
@@ -1285,7 +1285,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                       disabled={!canManage}
                       value={formKap.telepon}
                       onChange={(e) => setFormKap((p) => ({ ...p, telepon: e.target.value }))}
-                      className="w-full h-9 px-3 text-xs font-mono border border-slate-300 rounded-md focus:outline-none focus:border-slate-500 disabled:bg-slate-100 disabled:text-slate-500"
+                      className="w-full h-9 px-3 text-xs font-mono border border-slate-300 rounded-sm focus:outline-none focus:border-slate-500 disabled:bg-slate-100 disabled:text-slate-500"
                     />
                   </div>
                   <div>
@@ -1298,7 +1298,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                       disabled={!canManage}
                       value={formKap.email}
                       onChange={(e) => setFormKap((p) => ({ ...p, email: e.target.value }))}
-                      className="w-full h-9 px-3 text-xs border border-slate-300 rounded-md focus:outline-none focus:border-slate-500 disabled:bg-slate-100 disabled:text-slate-500"
+                      className="w-full h-9 px-3 text-xs border border-slate-300 rounded-sm focus:outline-none focus:border-slate-500 disabled:bg-slate-100 disabled:text-slate-500"
                     />
                   </div>
                   <div>
@@ -1311,7 +1311,7 @@ export const EngagementHubPortal: React.FC<EngagementHubPortalProps> = ({
                       disabled={!canManage}
                       value={formKap.website ?? ''}
                       onChange={(e) => setFormKap((p) => ({ ...p, website: e.target.value }))}
-                      className="w-full h-9 px-3 text-xs border border-slate-300 rounded-md focus:outline-none focus:border-slate-500 disabled:bg-slate-100 disabled:text-slate-500"
+                      className="w-full h-9 px-3 text-xs border border-slate-300 rounded-sm focus:outline-none focus:border-slate-500 disabled:bg-slate-100 disabled:text-slate-500"
                     />
                   </div>
                 </div>

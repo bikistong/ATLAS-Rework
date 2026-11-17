@@ -552,7 +552,7 @@ export const C400OpinionAndLai: React.FC = () => {
 
           <div className="text-center pt-2">
             <div className="text-sm font-bold">LAPORAN AUDITOR INDEPENDEN</div>
-            <div className="font-mono text-[11px] font-semibold text-slate-700">
+            <div className="font-mono text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1">
               No. Laporan: {laiNumber}
             </div>
           </div>

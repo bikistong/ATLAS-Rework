@@ -534,7 +534,7 @@ export const DynamicLeadScheduleView: React.FC<{ kodeIndeks: string }> = ({ kode
 
           {/* Target Asersi yang Diuji */}
           <div className="pt-2 border-t border-slate-200 flex flex-wrap items-center gap-3">
-            <span className="text-[11px] font-semibold text-slate-700 inline-flex items-center gap-1">
+            <span className=" inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1">
               <CheckSquare className="w-3.5 h-3.5 text-indigo-700" />
               Cakupan Asersi Audit:
             </span>
@@ -612,7 +612,7 @@ export const DynamicLeadScheduleView: React.FC<{ kodeIndeks: string }> = ({ kode
                 <div>
                   <label
                     htmlFor="new-proc-type"
-                    className="block text-[11px] font-semibold text-slate-700 mb-1"
+                    className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1"
                   >
                     Tipe Prosedur
                   </label>
@@ -633,7 +633,7 @@ export const DynamicLeadScheduleView: React.FC<{ kodeIndeks: string }> = ({ kode
                 <div>
                   <label
                     htmlFor="new-proc-assertions"
-                    className="block text-[11px] font-semibold text-slate-700 mb-1"
+                    className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1"
                   >
                     Target Asersi
                   </label>
@@ -666,7 +666,7 @@ export const DynamicLeadScheduleView: React.FC<{ kodeIndeks: string }> = ({ kode
               <div>
                 <label
                   htmlFor="new-proc-text"
-                  className="block text-[11px] font-semibold text-slate-700 mb-1"
+                  className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1"
                 >
                   Uraian Prosedur Substantif Khusus
                 </label>
@@ -718,7 +718,7 @@ export const DynamicLeadScheduleView: React.FC<{ kodeIndeks: string }> = ({ kode
                     <td className="py-2 px-2 text-slate-800 leading-relaxed">
                       {proc.procedureText}
                     </td>
-                    <td className="py-2 px-2 text-center font-mono text-[11px] font-semibold text-slate-700 whitespace-nowrap">
+                    <td className="py-2 px-2 text-center font-mono  whitespace-nowrap text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1">
                       {proc.targetAssertions}
                     </td>
                     <td className="py-2 px-2">
@@ -851,7 +851,7 @@ export const DynamicLeadScheduleView: React.FC<{ kodeIndeks: string }> = ({ kode
           <div className="md:col-span-5">
             <label
               htmlFor="lead-audit-conclusion"
-              className="block text-[11px] font-semibold text-slate-700 mb-1"
+              className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1"
             >
               Simpulan Audit Lead Schedule {lead.leadCode}
             </label>
@@ -881,7 +881,7 @@ export const DynamicLeadScheduleView: React.FC<{ kodeIndeks: string }> = ({ kode
           <div className="md:col-span-7">
             <label
               htmlFor="lead-conclusion-notes"
-              className="block text-[11px] font-semibold text-slate-700 mb-1"
+              className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1"
             >
               Memo & Catatan Simpulan Auditor
             </label>
@@ -923,7 +923,7 @@ export const DynamicLeadScheduleView: React.FC<{ kodeIndeks: string }> = ({ kode
         >
           <form
             onSubmit={handleCreateCustomLead}
-            className="bg-white border border-slate-300 rounded shadow-xl w-full max-w-md p-4 space-y-3"
+            className="bg-white border border-slate-300 rounded shadow-md w-full max-w-md p-4 space-y-3"
           >
             <div className="flex items-center justify-between pb-2 border-b border-slate-200">
               <h3 className="text-sm font-bold text-slate-900">
@@ -942,7 +942,7 @@ export const DynamicLeadScheduleView: React.FC<{ kodeIndeks: string }> = ({ kode
               <div>
                 <label
                   htmlFor="custom-lead-code"
-                  className="block text-[11px] font-semibold text-slate-700 mb-1"
+                  className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1"
                 >
                   Kode Lead
                 </label>
@@ -960,7 +960,7 @@ export const DynamicLeadScheduleView: React.FC<{ kodeIndeks: string }> = ({ kode
               <div>
                 <label
                   htmlFor="custom-lead-normal"
-                  className="block text-[11px] font-semibold text-slate-700 mb-1"
+                  className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1"
                 >
                   Saldo Normal
                 </label>
@@ -978,7 +978,7 @@ export const DynamicLeadScheduleView: React.FC<{ kodeIndeks: string }> = ({ kode
             <div>
               <label
                 htmlFor="custom-lead-title"
-                className="block text-[11px] font-semibold text-slate-700 mb-1"
+                className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1"
               >
                 Nama Pos / Lead Schedule
               </label>
@@ -996,7 +996,7 @@ export const DynamicLeadScheduleView: React.FC<{ kodeIndeks: string }> = ({ kode
             <div>
               <label
                 htmlFor="custom-lead-cat"
-                className="block text-[11px] font-semibold text-slate-700 mb-1"
+                className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1"
               >
                 Kategori Laporan Keuangan
               </label>

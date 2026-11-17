@@ -40,7 +40,7 @@ export const A120TimeBudget: React.FC = () => {
           <div>
             <label
               htmlFor="a120-mulai"
-              className="block text-[11px] font-semibold text-slate-700 mb-1"
+              className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1"
             >
               Tanggal Mulai Penugasan
             </label>
@@ -65,7 +65,7 @@ export const A120TimeBudget: React.FC = () => {
           <div>
             <label
               htmlFor="a120-selesai"
-              className="block text-[11px] font-semibold text-slate-700 mb-1"
+              className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1"
             >
               Tanggal Selesai / Target LAI
             </label>
@@ -88,7 +88,7 @@ export const A120TimeBudget: React.FC = () => {
           <div>
             <label
               htmlFor="a120-libur"
-              className="block text-[11px] font-semibold text-slate-700 mb-1"
+              className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1"
             >
               Hari Libur Nasional (dalam Periode)
             </label>
@@ -182,7 +182,7 @@ export const A120TimeBudget: React.FC = () => {
         <div>
           <label
             htmlFor="a120-tema-pelatihan"
-            className="block text-[11px] font-semibold text-slate-700 mb-1"
+            className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1"
           >
             Tema Pelatihan Profesional Berkelanjutan (PPL) Tim Perikatan
           </label>

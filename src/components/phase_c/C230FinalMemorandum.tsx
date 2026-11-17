@@ -35,7 +35,7 @@ export const C230FinalMemorandum: React.FC = () => {
           disabled={readOnly}
           data-testid="c230-sync-btn"
           onClick={() => dispatchAction({ type: 'SYNC_C230_FROM_MODULES' })}
-          className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-700 disabled:opacity-40 text-white text-xs font-semibold rounded flex items-center gap-1.5 cursor-pointer"
+          className="px-3 py-1.5 bg-indigo-700 hover:bg-indigo-800 disabled:opacity-40 text-white text-xs font-semibold rounded flex items-center gap-1.5 cursor-pointer"
         >
           <RefreshCw className="w-3.5 h-3.5" />
           <span>Sinkronkan Ringkasan Otomatis (12 Pilar)</span>

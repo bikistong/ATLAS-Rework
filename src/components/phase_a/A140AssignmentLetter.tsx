@@ -60,7 +60,7 @@ export const A140AssignmentLetter: React.FC = () => {
           <div>
             <label
               htmlFor="a140-nomor"
-              className="block text-[11px] font-semibold text-slate-700 mb-1"
+              className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1"
             >
               Nomor Surat Tugas
             </label>

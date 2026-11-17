@@ -217,7 +217,7 @@ export const A1102_1AmlAssessment: React.FC = () => {
           onClick={() => setRegModalOpen(false)}
         >
           <div
-            className="bg-white border border-slate-300 rounded-md shadow-xl w-full max-w-4xl max-h-[85vh] flex flex-col overflow-hidden"
+            className="bg-white border border-slate-300 rounded-sm shadow-md w-full max-w-4xl max-h-[85vh] flex flex-col overflow-hidden"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="px-4 py-3 border-b border-slate-200 bg-slate-50 flex items-center justify-between">

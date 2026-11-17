@@ -294,7 +294,7 @@ export const TopBar: React.FC<TopBarProps> = ({
           onClick={handleExportBundle}
           data-testid="export-atlas-btn"
           title="Export Perikatan Aktif (.atlas.json)"
-          className="h-8 px-2.5 rounded bg-indigo-600 hover:bg-indigo-500 text-xs font-semibold text-white flex items-center gap-1.5 whitespace-nowrap cursor-pointer transition-colors"
+          className="h-8 px-2.5 rounded bg-indigo-700 hover:bg-indigo-800 text-xs font-semibold text-white flex items-center gap-1.5 whitespace-nowrap cursor-pointer transition-colors"
         >
           <Download className="w-3.5 h-3.5" />
           <span className="hidden sm:inline">.atlas.json</span>

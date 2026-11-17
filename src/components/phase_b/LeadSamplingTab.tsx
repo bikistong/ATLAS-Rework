@@ -331,7 +331,7 @@ export const LeadSamplingTab: React.FC<LeadSamplingTabProps> = ({
             <div className="sm:col-span-2">
               <label
                 htmlFor="sampling-sap-select"
-                className="block text-[11px] font-semibold text-slate-700 mb-1"
+                className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1"
               >
                 SAP Assurance Level (Asurans Prosedur Analitis Substantif)
               </label>
@@ -355,7 +355,7 @@ export const LeadSamplingTab: React.FC<LeadSamplingTabProps> = ({
               <div className="flex items-center justify-between mb-1">
                 <label
                   htmlFor="sampling-total-pop"
-                  className="block text-[11px] font-semibold text-slate-700"
+                  className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1"
                 >
                   Total Populasi Book Value (Rp)
                 </label>
@@ -384,7 +384,7 @@ export const LeadSamplingTab: React.FC<LeadSamplingTabProps> = ({
             <div>
               <label
                 htmlFor="sampling-total-items"
-                className="block text-[11px] font-semibold text-slate-700 mb-1"
+                className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1"
               >
                 Total Item / Transaksi Populasi (N)
               </label>
@@ -403,7 +403,7 @@ export const LeadSamplingTab: React.FC<LeadSamplingTabProps> = ({
             <div>
               <label
                 htmlFor="sampling-specific-val"
-                className="block text-[11px] font-semibold text-slate-700 mb-1"
+                className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1"
               >
                 Specific Items Value (Key Items, Rp)
               </label>
@@ -422,7 +422,7 @@ export const LeadSamplingTab: React.FC<LeadSamplingTabProps> = ({
             <div>
               <label
                 htmlFor="sampling-specific-cnt"
-                className="block text-[11px] font-semibold text-slate-700 mb-1"
+                className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1"
               >
                 Jumlah Item Specific (Key Items)
               </label>
@@ -440,7 +440,7 @@ export const LeadSamplingTab: React.FC<LeadSamplingTabProps> = ({
 
           {/* 3x3 Confidence Factor Matrix Reference */}
           <div className="lg:col-span-5">
-            <div className="text-[11px] font-semibold text-slate-700 mb-1.5">
+            <div className=".5 text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1">
               Matriks Confidence Factor (RoMM A270: {ctx.rommLevel})
             </div>
             <table className="w-full border-collapse border border-slate-200 text-[11px]">
@@ -832,7 +832,7 @@ export const LeadSamplingTab: React.FC<LeadSamplingTabProps> = ({
           <div className="md:col-span-8">
             <label
               htmlFor="sampling-evaluator-notes"
-              className="block text-[11px] font-semibold text-slate-700 mb-1"
+              className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1"
             >
               Catatan Evaluasi & Simpulan Uji Petik SA 530
             </label>

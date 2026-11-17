@@ -112,7 +112,7 @@ export const A1101PriorIssues: React.FC = () => {
             })
           }
           placeholder="Dokumentasikan latar belakang restrukturisasi, opini sebelumnya, atau tindakan manajemen..."
-          className="w-full p-2.5 text-xs bg-white border border-slate-300 rounded text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-indigo-600 focus:ring-1 focus:ring-indigo-600 disabled:bg-slate-100 disabled:text-slate-500"
+          className="w-full p-2 rounded border border-slate-300 bg-white text-[13px] text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500/40 focus:border-indigo-500 disabled:bg-slate-100 disabled:text-slate-400 disabled:cursor-not-allowed"
         />
       </div>
     </div>

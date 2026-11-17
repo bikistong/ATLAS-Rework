@@ -27,7 +27,7 @@ export const HomeIkhtisarView: React.FC = () => {
 
   if (!activeEngagement || !activeClient) {
     return (
-      <div className="max-w-5xl mx-auto bg-white border border-slate-200 rounded-lg p-6 text-xs text-slate-600">
+      <div className="max-w-5xl mx-auto bg-white border border-slate-200 rounded-sm p-6 text-xs text-slate-600">
         Pilih perikatan dari Engagement Hub untuk menampilkan Ikhtisar Perikatan.
       </div>
     );
@@ -41,7 +41,7 @@ export const HomeIkhtisarView: React.FC = () => {
 
       {/* 4 Summary KPI Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
-        <div className="bg-white border border-slate-200 rounded-lg p-4">
+        <div className="bg-white border border-slate-200 rounded-sm p-4">
           <p className="text-[11px] font-medium text-slate-500">Kantor Akuntan Publik</p>
           <p className="mt-1.5 text-sm font-bold text-slate-900 leading-snug">
             {state.kapProfile.namaKap}
@@ -51,7 +51,7 @@ export const HomeIkhtisarView: React.FC = () => {
           </p>
         </div>
 
-        <div className="bg-white border border-slate-200 rounded-lg p-4">
+        <div className="bg-white border border-slate-200 rounded-sm p-4">
           <p className="text-[11px] font-medium text-slate-500">Entitas & Tahun Buku</p>
           <p className="mt-1.5 text-sm font-bold text-slate-900 leading-snug">
             {activeClient.namaKlien}
@@ -61,7 +61,7 @@ export const HomeIkhtisarView: React.FC = () => {
           </p>
         </div>
 
-        <div className="bg-white border border-slate-200 rounded-lg p-4">
+        <div className="bg-white border border-slate-200 rounded-sm p-4">
           <p className="text-[11px] font-medium text-slate-500">Progres Penyelesaian KKP</p>
           <p className="mt-1.5 text-lg font-mono font-bold text-slate-900 tabular-nums">
             {progress.percent}% ({progress.completed}/{progress.total})
@@ -74,7 +74,7 @@ export const HomeIkhtisarView: React.FC = () => {
           </div>
         </div>
 
-        <div className="bg-white border border-slate-200 rounded-lg p-4">
+        <div className="bg-white border border-slate-200 rounded-sm p-4">
           <p className="text-[11px] font-medium text-slate-500">
             Materialitas Keseluruhan (SA 320)
           </p>
@@ -88,7 +88,7 @@ export const HomeIkhtisarView: React.FC = () => {
       </div>
 
       {/* Ikhtisar Kesiapan Modul KKP */}
-      <section className="bg-white border border-slate-200 rounded-lg overflow-hidden">
+      <section className="bg-white border border-slate-200 rounded-sm overflow-hidden">
         <div className="px-4 py-3 border-b border-slate-200 bg-slate-50/70">
           <h2 className="text-xs font-bold uppercase tracking-wider text-slate-700">
             Ikhtisar Kesiapan Modul KKP
@@ -144,7 +144,7 @@ export const HomeIkhtisarView: React.FC = () => {
 
       {/* Bottom Row: Susunan Tim & Referensi KKP */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <section className="bg-white border border-slate-200 rounded-lg overflow-hidden">
+        <section className="bg-white border border-slate-200 rounded-sm overflow-hidden">
           <div className="px-4 py-2.5 border-b border-slate-200 bg-slate-50/70">
             <h3 className="text-xs font-bold uppercase tracking-wider text-slate-700">
               Susunan Tim Perikatan
@@ -180,7 +180,7 @@ export const HomeIkhtisarView: React.FC = () => {
           </div>
         </section>
 
-        <section className="bg-white border border-slate-200 rounded-lg overflow-hidden">
+        <section className="bg-white border border-slate-200 rounded-sm overflow-hidden">
           <div className="px-4 py-2.5 border-b border-slate-200 bg-slate-50/70">
             <h3 className="text-xs font-bold uppercase tracking-wider text-slate-700">
               Alat Bantu & Referensi KKP
@@ -190,7 +190,7 @@ export const HomeIkhtisarView: React.FC = () => {
             <button
               type="button"
               onClick={() => setActiveIndex('Daftar Lampiran')}
-              className="p-3 rounded-md border border-slate-200 hover:border-indigo-300 hover:bg-indigo-50/30 text-left transition-colors cursor-pointer"
+              className="p-3 rounded-sm border border-slate-200 hover:border-indigo-300 hover:bg-indigo-50/30 text-left transition-colors cursor-pointer"
             >
               <div className="flex items-center gap-1.5 text-xs font-semibold text-slate-900">
                 <Paperclip className="w-3.5 h-3.5 text-indigo-600" />
@@ -204,7 +204,7 @@ export const HomeIkhtisarView: React.FC = () => {
             <button
               type="button"
               onClick={() => setActiveIndex('AuditCycle')}
-              className="p-3 rounded-md border border-slate-200 hover:border-indigo-300 hover:bg-indigo-50/30 text-left transition-colors cursor-pointer"
+              className="p-3 rounded-sm border border-slate-200 hover:border-indigo-300 hover:bg-indigo-50/30 text-left transition-colors cursor-pointer"
             >
               <div className="flex items-center gap-1.5 text-xs font-semibold text-slate-900">
                 <GitBranch className="w-3.5 h-3.5 text-indigo-600" />
@@ -218,7 +218,7 @@ export const HomeIkhtisarView: React.FC = () => {
             <button
               type="button"
               onClick={() => setActiveIndex('Singkatan')}
-              className="p-3 rounded-md border border-slate-200 hover:border-indigo-300 hover:bg-indigo-50/30 text-left transition-colors cursor-pointer"
+              className="p-3 rounded-sm border border-slate-200 hover:border-indigo-300 hover:bg-indigo-50/30 text-left transition-colors cursor-pointer"
             >
               <div className="flex items-center gap-1.5 text-xs font-semibold text-slate-900">
                 <BookOpen className="w-3.5 h-3.5 text-indigo-600" />
@@ -232,7 +232,7 @@ export const HomeIkhtisarView: React.FC = () => {
             <button
               type="button"
               onClick={() => setActiveIndex('Petunjuk Isi')}
-              className="p-3 rounded-md border border-slate-200 hover:border-indigo-300 hover:bg-indigo-50/30 text-left transition-colors cursor-pointer"
+              className="p-3 rounded-sm border border-slate-200 hover:border-indigo-300 hover:bg-indigo-50/30 text-left transition-colors cursor-pointer"
             >
               <div className="flex items-center gap-1.5 text-xs font-semibold text-slate-900">
                 <HelpCircle className="w-3.5 h-3.5 text-indigo-600" />

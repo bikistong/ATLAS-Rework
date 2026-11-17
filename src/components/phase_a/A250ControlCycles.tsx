@@ -389,7 +389,7 @@ export const A250ControlCycles: React.FC = () => {
 
             <div className="grid grid-cols-2 gap-2">
               <div>
-                <label className="block text-[11px] font-semibold text-slate-700 mb-1">
+                <label className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1">
                   Frekuensi
                 </label>
                 <select
@@ -408,7 +408,7 @@ export const A250ControlCycles: React.FC = () => {
                 </select>
               </div>
               <div>
-                <label className="block text-[11px] font-semibold text-slate-700 mb-1">
+                <label className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1">
                   Tipe Aktivitas
                 </label>
                 <select
@@ -430,7 +430,7 @@ export const A250ControlCycles: React.FC = () => {
 
             <div className="grid grid-cols-2 gap-2">
               <div>
-                <label className="block text-[11px] font-semibold text-slate-700 mb-1">
+                <label className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1">
                   Desain & Implementasi
                 </label>
                 <select
@@ -447,7 +447,7 @@ export const A250ControlCycles: React.FC = () => {
                 </select>
               </div>
               <div>
-                <label className="block text-[11px] font-semibold text-slate-700 mb-1">
+                <label className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1">
                   Hasil Test of Controls
                 </label>
                 <select
@@ -469,7 +469,7 @@ export const A250ControlCycles: React.FC = () => {
             </div>
 
             <div>
-              <div className="text-[11px] font-semibold text-slate-700 mb-1">Dampak Asersi</div>
+              <div className=" text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1">Dampak Asersi</div>
               <div className="flex flex-wrap gap-3 text-xs">
                 {(['C', 'E', 'A&C', 'V'] as const).map((k) => (
                   <label key={k} className="inline-flex items-center gap-1 cursor-pointer">
@@ -489,7 +489,7 @@ export const A250ControlCycles: React.FC = () => {
             </div>
 
             <div>
-              <label className="block text-[11px] font-semibold text-slate-700 mb-1">
+              <label className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1">
                 Catatan Pengujian / Sampel
               </label>
               <input

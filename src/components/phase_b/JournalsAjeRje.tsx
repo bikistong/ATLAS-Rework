@@ -113,14 +113,14 @@ export const JournalEntryForm: React.FC<JournalFormProps> = ({
             Hanya jurnal berstatus <strong>Accepted</strong> yang masuk ke saldo Audited WSTB (B100), Laporan Keuangan (B120), dan A210.
           </p>
         </div>
-        <span className="px-2 py-0.5 rounded bg-slate-100 border border-slate-200 font-mono text-[11px] font-semibold text-slate-700">
+        <span className="px-2 py-0.5 rounded bg-slate-100 border border-slate-200 font-mono text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1">
           Auto ID: {previewNumber}
         </span>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
         <div>
-          <label htmlFor="jrn-jenis" className="block text-[11px] font-semibold text-slate-700 mb-1">
+          <label htmlFor="jrn-jenis" className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1">
             Jenis Jurnal
           </label>
           <select
@@ -135,7 +135,7 @@ export const JournalEntryForm: React.FC<JournalFormProps> = ({
           </select>
         </div>
         <div>
-          <label htmlFor="jrn-status" className="block text-[11px] font-semibold text-slate-700 mb-1">
+          <label htmlFor="jrn-status" className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1">
             Status Persetujuan
           </label>
           <select
@@ -153,7 +153,7 @@ export const JournalEntryForm: React.FC<JournalFormProps> = ({
           </select>
         </div>
         <div>
-          <label htmlFor="jrn-tanggal" className="block text-[11px] font-semibold text-slate-700 mb-1">
+          <label htmlFor="jrn-tanggal" className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1">
             Tanggal Jurnal
           </label>
           <input
@@ -166,7 +166,7 @@ export const JournalEntryForm: React.FC<JournalFormProps> = ({
           />
         </div>
         <div>
-          <label htmlFor="jrn-ref" className="block text-[11px] font-semibold text-slate-700 mb-1">
+          <label htmlFor="jrn-ref" className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1">
             Referensi Indeks KKP
           </label>
           <input
@@ -309,7 +309,7 @@ export const JournalEntryForm: React.FC<JournalFormProps> = ({
 
       <div>
         <div className="flex items-center justify-between mb-1">
-          <label htmlFor="jrn-ket" className="text-[11px] font-semibold text-slate-700">
+          <label htmlFor="jrn-ket" className=" text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1">
             Penjelasan / Keterangan Audit (Minimal 20 karakter)
           </label>
           <span
@@ -375,7 +375,7 @@ export const ProposeJournalModal: React.FC<{
       aria-label={`Propose AJE dari ${referensiKkp}`}
       className="fixed inset-0 z-50 bg-slate-900/50 flex items-center justify-center p-4"
     >
-      <div className="bg-slate-50 border border-slate-300 rounded shadow-xl w-full max-w-3xl max-h-[90vh] overflow-y-auto p-4 space-y-3">
+      <div className="bg-slate-50 border border-slate-300 rounded shadow-md w-full max-w-3xl max-h-[90vh] overflow-y-auto p-4 space-y-3">
         <div className="flex items-center justify-between pb-2 border-b border-slate-200">
           <h2 className="text-sm font-semibold text-slate-900">
             Propose AJE from Procedure ({referensiKkp})

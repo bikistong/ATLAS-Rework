@@ -27,7 +27,7 @@ export const ImportBundleModal: React.FC<ImportBundleModalProps> = ({
       onClick={onClose}
     >
       <div
-        className="w-full max-w-lg bg-white border border-slate-300 rounded-md shadow-xl overflow-hidden"
+        className="w-full max-w-lg bg-white border border-slate-300 rounded-sm shadow-md overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="px-4 py-3 bg-slate-900 text-white flex items-center justify-between">
